@@ -1,0 +1,9 @@
+<html><head></head><body><form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+    <button type="submit>">Upload file</button>
+</form>
+{%  if url %}
+<p>Uploaded file: <a href="{{url}}">doc</a></p>
+{% endif %}
+</body></html>
